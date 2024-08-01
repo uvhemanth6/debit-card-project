@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.debit-card {
+    width: 390px;
+    height: 228px;
+    position: relative;
+    background-image: url(bg.png);
+    border-radius: 30px;
+}
+
+.debit-card .header {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 23px;
+    right: 23px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo-name {
+    display: flex;
+    align-items: center;
+}
+.header .logo {
+    width: 51px;
+    height: 32px;
+    object-fit: cover;
+    margin-right: 12px;
+
+}
+.header .name {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+.header .chip {
+    width: 54px;
+    height: 32px;
+    object-fit: cover;
+}
+.debit-card .card-number {
+    position: absolute;
+    top: 110px;
+    left: 23px;
+    letter-spacing: 1px;
+}
+.card-number .title {
+    color: white;
+    font-size: 9px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+.debit-card .card-number .number {
+    color: white;
+    font-size: 18px;
+}
+.debit-card .name-validity-container {
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+    left: 23px;
+    right: 23px;
+    justify-content: space-between;
+    align-items: end;
+}
+.debit-card .name-validity-container .name {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+.debit-card .name-validity-container .validity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.valid-name {
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+}
+.no {
+    color: white;
+    font-size: 16px;
+}
